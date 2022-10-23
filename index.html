@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+   
+    <title> 👩🏻‍🚀 The astronomer </title>
+</head>
+<body class="dark">
+    <header>
+    <button class="theme-button"> Change Theme 🔦</button>
+    </header>
+
+<div class="container">
+    <section>
+    <h1> 🌠 Astronomy  </h1>
+    <h2>
+    "Astronomy compels the soul to look upward, and leads us from this world to another."
+    - Plato 🧔🏻
+    </h2>
+    </section>
+
+    <main>
+        <a href="https://en.wikipedia.org/wiki/Astronomy" target="_blank">
+        <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1513&q=80" alt="mountains-and-stars" class="cover-photo">
+        </a>
+        <div class="grid">
+            <img src="https://images.unsplash.com/photo-1625736410948-a984d181b8e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=786&q=80" alt="galaxy">
+            <img src="https://images.unsplash.com/photo-1606125784258-570fc63c22c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80" alt="galaxy">
+            <img src="https://images.unsplash.com/photo-1518577589972-ad2d4f44eae9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="telescope">
+            <img src="https://images.unsplash.com/photo-1620428268482-cf1851a36764?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=809&q=80" alt="astronaut">
+            
+        </div>
+        <p>
+        Astronomy (from Ancient Greek ἀστρονομία (astronomía) 'science that studies the laws of the stars') is a natural science that studies celestial objects and phenomena. It uses mathematics, physics, and chemistry in order to explain their origin and evolution. Objects of interest include planets, moons, stars, nebulae, galaxies, and comets. Relevant phenomena include supernova explosions, gamma ray bursts, quasars, blazars, pulsars, and cosmic microwave background radiation. More generally, astronomy studies everything that originates beyond Earth's atmosphere.
+        </p>
+        <div class="crash-course">
+            🤓<a href="https://youtu.be/0rHUDWjR5gg" target="_blank"> Astronomy Crash Course </a>
+            <span> by CrashCourse </span>
+        </div>
+        <button class="newsletter" id="subscribe"> Subscribe to Newsletter </button>
+    </main>
+
+    <footer>
+        <span> Coded by </span> <a href="https://www.linkedin.com/in/laura-carrillo21/" target="_blank"> Lau Carrillo </a> <span>during  She Codes Basics </span>  <a href="https://www.shecodes.io/max-add-ons" target="_blank">  Add-on workshop </a> 
+    </footer>
+</div>
+
+<script>
+   function changeTheme() {
+    let body = document.querySelector("body");
+    body.classList.toggle("dark");
+}
+
+function Subscribe () {
+    let name = prompt("Hello! What's your name?");
+    let email = prompt("Write your email please");
+    alert(`Thanks for subscribing ${name}, we'll send you an introductory e-mail to ${email} ⭐`);
+}
+
+let themeButton = document.querySelector(".theme-button");
+themeButton.addEventListener("click",changeTheme);
+
+let newsLetter = document.querySelector(".newsletter");
+newsLetter.addEventListener("click", Subscribe);
+
+
+
+console.log("hello");
+ 
+</script>
+</body>
+</html>

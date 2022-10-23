@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+body {
+    background: #f5e1da;
+    font-family: 'Quicksand', sans-serif;
+    color: #100D18;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size:20px;
+    font-weight: 300;
+    
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid plum;
+    background: white;
+    font-size: 20px;
+    border-radius:6px;
+    padding: 10px 15px;
+    transition: all 150ms ease-in-out;
+
+}
+
+button:hover {
+    background: plum;
+    cursor: pointer
+}
+
+footer {
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+    font-size: 20px;
+}
+
+.white-logo {
+    width: 200px;
+    display: block;
+    margin: 40px auto;
+}
+
+.theme-button, .newsletter {
+    font-size: 18px;
+    background-color:#ffb5b5;
+    color:#393e46;
+    padding: 15 20px;
+    border-radius: 50px;
+    border:none;
+    font-family:'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+.theme-button:hover, .newsletter:hover{
+    background:#f79f9f;
+    color:#393e46;
+
+}
+.container {
+    margin: 20px auto;
+    max-width: 600px;
+    background:#fcf8f3;
+    padding: 20px;
+    border-radius:10px;
+}
+
+.cover-photo {
+    border-radius: 10px;
+    transition:all 150ms ease-in-out;
+}
+
+.cover-photo:hover{
+    filter:contrast(80%);
+    transform:scale(1.1);
+}
+
+.grid {
+    margin: 15px 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:15px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius:8px;
+    transition:all 150ms ease-in-out;
+}
+
+.grid img:hover {
+    transform:scale(1.1);
+}
+
+.crash-course {
+    font-size: 18px;
+    margin: 20px;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+    font-weight: 300;
+    color:#f79f9f;
+    font-size: 16px;
+}
+
+a:hover {
+    color:#f5e1da;
+}
+
+footer {
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+.dark {
+    background:#100D18;
+}
+
+.dark .container {
+    background: #1C1824;
+}
+
+.dark .theme-button {
+    background: #1C1824;
+    color:#f5e1da;
+}
+
+.dark .theme-button:hover {
+    background:#ffe9e3;
+    color:#393e46;
+}
+
+.dark h1 {
+    color:#f5e1da;
+}
+
+.dark h2 {
+    color:#f5e1da;
+}
+
+.dark p {
+    color:#f5e1da;
+}
+
+.dark span {
+    color:#f5e1da;
+}
+
+.dark .newsletter {
+    background: #100D18;
+    color:#f5e1da;
+}
+
+.dark .newsletter:hover {
+    background:#ffe9e3;
+    color:#393e46;
+}
